@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Production Calculator</title>
+
+<!-- PWA -->
+<link rel="manifest" href="manifest.json">
+
+<meta name="theme-color" content="#0B0F17">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<meta name="apple-mobile-web-app-title" content="Production Calculator">
+
+<link rel="apple-touch-icon" href="icon-192.png">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+<header class="header">
+<h1>입력</h1>
+<div class="header-buttons">
+
+    <button id="installBtn">
+        설치
+    </button>
+
+    <button id="resetBtn">
+        초기화
+    </button>
+
+</div>
+</header>
+
+<section class="input-grid">
+<div class="left">
+<div class="card"><label>입수</label><input id="qtyPerBox" type="text" inputmode="numeric"></div>
+<div class="card"><label>주간</label><input id="dayShift" type="text" inputmode="numeric"></div>
+<div class="card"><label>야간</label><input id="nightShift" type="text" inputmode="numeric"></div>
+</div>
+
+<div class="right card">
+<label>S/F 불량</label>
+<div class="damage"><span>①</span><input id="damage1" type="text" inputmode="numeric"></div>
+<div class="damage"><span>②</span><input id="damage2" type="text" inputmode="numeric"></div>
+<div class="damage"><span>③</span><input id="damage3" type="text" inputmode="numeric"></div>
+<div class="damage"><span>④</span><input id="damage4" type="text" inputmode="numeric"></div>
+</div>
+</section>
+
+<hr>
+
+<h2>생산수량</h2>
+<div class="panel">
+<div class="row"><span>정품</span><strong id="realResult">0</strong></div>
+<div class="row"><span>불량</span><strong id="damageResult">0</strong></div>
+<div class="row total"><span>합계</span><strong id="totalResult">0</strong></div>
+</div>
+
+<footer class="footer">
+
+    <div class="version">
+        Version 1.0
+    </div>
+
+    <div>
+        Designed &amp; Developed by <strong>꼬꼬</strong>
+    </div>
+
+</footer>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
