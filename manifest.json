@@ -1,7 +1,8 @@
 {
     "name": "Production Calculator",
     "short_name": "Calculator",
-    "start_url": "./index.html",
+    "id": "/production-calculator/",
+    "start_url": "/production-calculator/",
     "display": "standalone",
     "background_color": "#0B0F17",
     "theme_color": "#0B0F17",
